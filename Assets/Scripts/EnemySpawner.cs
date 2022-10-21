@@ -4,8 +4,8 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private Transform[] _spawnPoints;
-    [SerializeField] private GameObject _enemyPrefab;
-    private System.Random _random = new System.Random();
+    [SerializeField] private Enemy _enemyPrefab;
+    
     private float _waitSeconds = 2;
 
     private void Awake()
@@ -25,7 +25,7 @@ public class EnemySpawner : MonoBehaviour
         
         while (true)
         {
-            int spawnPointIndex = _random.Next(_spawnPoints.Length);
+            int spawnPointIndex = Random.Range(0, _spawnPoints.Length);
             SpawnEnemyIn(_spawnPoints[spawnPointIndex]);
             yield return waitSeconds;
         }
@@ -33,6 +33,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemyIn(Transform spawnPoint)
     {
-        Instantiate(_enemyPrefab, spawnPoint);
+        Instantiate(_enemyPrefab, spawnPoint.position, Quaternion.identity);
     }
 }

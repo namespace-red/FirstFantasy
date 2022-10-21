@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3898557805352032831}
   - component: {fileID: 942305193146962364}
   - component: {fileID: 6297785079688752667}
+  - component: {fileID: 813533343512942859}
   m_Layer: 0
   m_Name: BlackBoar
   m_TagString: Untagged
@@ -70,6 +71,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &813533343512942859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3748271975775343209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca38ac7e4cb119f458f0b5e1ff7cf229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3786788123303683102
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,7 +156,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -4579509687501594591, guid: 37249c455a2b89843abec65118368bdd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.5, y: 1.6875}
