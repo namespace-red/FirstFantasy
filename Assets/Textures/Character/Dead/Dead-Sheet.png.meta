@@ -130,12 +130,12 @@ TextureImporter:
       name: Dead-Sheet_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 35
-        height: 47
+        x: 0
+        y: 0
+        width: 80
+        height: 64
       alignment: 9
-      pivot: {x: 0.14285715, y: 0}
+      pivot: {x: 0.3625, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,12 +151,12 @@ TextureImporter:
       name: Dead-Sheet_1
       rect:
         serializedVersion: 2
-        x: 91
-        y: 14
-        width: 34
-        height: 46
+        x: 80
+        y: 0
+        width: 80
+        height: 64
       alignment: 9
-      pivot: {x: 0.23529412, y: 0.06521739}
+      pivot: {x: 0.3625, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: Dead-Sheet_2
       rect:
         serializedVersion: 2
-        x: 171
-        y: 16
-        width: 34
-        height: 37
+        x: 160
+        y: 0
+        width: 80
+        height: 64
       alignment: 9
-      pivot: {x: 0.23529412, y: 0.027027028}
+      pivot: {x: 0.3625, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: Dead-Sheet_3
       rect:
         serializedVersion: 2
-        x: 251
-        y: 16
-        width: 34
-        height: 35
+        x: 240
+        y: 0
+        width: 80
+        height: 64
       alignment: 9
-      pivot: {x: 0.23529412, y: 0.028571429}
+      pivot: {x: 0.3625, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: Dead-Sheet_4
       rect:
         serializedVersion: 2
-        x: 331
-        y: 16
-        width: 34
-        height: 34
+        x: 320
+        y: 0
+        width: 80
+        height: 64
       alignment: 9
-      pivot: {x: 0.23529412, y: 0.029411765}
+      pivot: {x: 0.3625, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: Dead-Sheet_5
       rect:
         serializedVersion: 2
-        x: 411
-        y: 16
-        width: 39
-        height: 31
+        x: 400
+        y: 0
+        width: 80
+        height: 64
       alignment: 9
-      pivot: {x: 0.20512821, y: 0.032258064}
+      pivot: {x: 0.3625, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: Dead-Sheet_6
       rect:
         serializedVersion: 2
-        x: 491
-        y: 16
-        width: 50
-        height: 24
+        x: 480
+        y: 0
+        width: 80
+        height: 64
       alignment: 9
-      pivot: {x: 0.16, y: 0.041666668}
+      pivot: {x: 0.3625, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: Dead-Sheet_7
       rect:
         serializedVersion: 2
-        x: 571
-        y: 11
-        width: 53
-        height: 16
+        x: 560
+        y: 0
+        width: 80
+        height: 64
       alignment: 9
-      pivot: {x: 0.1509434, y: 0.375}
+      pivot: {x: 0.3625, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
