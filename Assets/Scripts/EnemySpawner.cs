@@ -26,13 +26,13 @@ public class EnemySpawner : MonoBehaviour
         while (true)
         {
             int spawnPointIndex = Random.Range(0, _spawnPoints.Length);
-            SpawnEnemyIn(_spawnPoints[spawnPointIndex]);
+            SpawnEnemyIn(_spawnPoints[spawnPointIndex].position);
             yield return waitSeconds;
         }
     }
 
-    private void SpawnEnemyIn(Transform spawnPoint)
+    private void SpawnEnemyIn(Vector3 spawnPoint)
     {
-        Instantiate(_enemyPrefab, spawnPoint.position, Quaternion.identity);
+        Instantiate(_enemyPrefab, spawnPoint, Quaternion.identity);
     }
 }
