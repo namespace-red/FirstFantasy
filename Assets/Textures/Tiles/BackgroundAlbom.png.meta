@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: -855440701808172565
     second: BackgroundAlbom_1
+  - first:
+      213: 4862957731875052482
+    second: Money
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,7 +120,7 @@ TextureImporter:
         width: 12
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,7 +141,7 @@ TextureImporter:
         width: 45
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,6 +149,27 @@ TextureImporter:
       bones: []
       spriteID: be1205ac63dd024f0800000000000000
       internalID: -855440701808172565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Money
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 339
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbd626ca42bc7340800000000000000
+      internalID: 4862957731875052482
       vertices: []
       indices: 
       edges: []
