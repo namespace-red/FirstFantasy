@@ -2,9 +2,13 @@ using UnityEngine;
 
 public class Wallet : MonoBehaviour
 {
-    [SerializeField] private int _value = 1;
+    [SerializeField] private int _value;
 
-    public int GetValue() => _value;
+    public int Value 
+    { 
+        get => _value;
+        private set => _value = value; 
+    }
 
-    public void AddMoney(int value) => _value += value;
+    public void AddMoney(int value) => Value += value;
 }

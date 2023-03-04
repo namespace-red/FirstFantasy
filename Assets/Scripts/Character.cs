@@ -15,7 +15,7 @@ public class Character : MonoBehaviour
     {
         if (other.TryGetComponent<Money>(out Money money))
         {
-            _wallet.AddMoney(money.GetValue());
+            _wallet.AddMoney(money.Value);
             money.PickUp();
         }
     }

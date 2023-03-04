@@ -4,7 +4,7 @@ public class Money : MonoBehaviour, IPickable
 {
     [SerializeField] private int _value = 1;
 
-    public int GetValue() => _value;
+    public int Value { get => _value; }
 
     public void PickUp()
     {

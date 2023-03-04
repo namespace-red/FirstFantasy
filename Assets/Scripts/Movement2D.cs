@@ -12,12 +12,13 @@ public class Movement2D : MonoBehaviour
     private const float GroundDistance = .2f;
     private Rigidbody2D _rigidbody2D;
 
-    [Header("Events")] [Space] public UnityEvent Grounded = new UnityEvent();
+    [Header("Events")]
+    [SerializeField] private UnityEvent _grounded = new UnityEvent();
     
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
 
-    public BoolEvent Jumped = new BoolEvent();
+    [SerializeField] private BoolEvent _jumped = new BoolEvent();
 
     public bool IsGrounded { get; private set; }
     private void Awake()
@@ -45,7 +46,7 @@ public class Movement2D : MonoBehaviour
                 IsGrounded = true;
                 
                 if (wasGrounded == false)
-                    Grounded?.Invoke();
+                    _grounded?.Invoke();
                 
                 return;
             }
@@ -65,7 +66,7 @@ public class Movement2D : MonoBehaviour
         if (IsGrounded)
         {
             _rigidbody2D.AddForce(_jumpForse * Vector2.up);
-            Jumped?.Invoke(true);
+            _jumped?.Invoke(true);
         }
     }
 }

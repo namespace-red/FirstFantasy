@@ -3,17 +3,19 @@ using UnityEngine;
 public class EntityLook : MonoBehaviour
 {
     private bool _characterLooksToRight = true;
-    
+    private float _horizontalDirection;
+
+    private bool IsRunningToRight { get => _horizontalDirection > 0; }
+
     public void SetDirection(float horizontalDirection)
     {
-        if (IsRunningToRight(horizontalDirection) && (_characterLooksToRight == false))
+        _horizontalDirection = horizontalDirection;
+        
+        if (IsRunningToRight && (_characterLooksToRight == false))
             FlipLook();
-        else if (IsRunningToLeft(horizontalDirection) && _characterLooksToRight)
+        else if (IsRunningToRight == false && _characterLooksToRight)
             FlipLook();
     }
-
-    private bool IsRunningToRight(float horizontalDirection) => horizontalDirection > 0;
-    private bool IsRunningToLeft(float horizontalDirection) => horizontalDirection < 0;
 
     private void FlipLook()
     {
