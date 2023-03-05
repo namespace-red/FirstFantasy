@@ -21,6 +21,7 @@ public class Movement2D : MonoBehaviour
     [SerializeField] private BoolEvent _jumped = new BoolEvent();
 
     public bool IsGrounded { get; private set; }
+    
     private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();

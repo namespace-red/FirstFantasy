@@ -5,14 +5,15 @@ using UnityEngine;
 public class WaypointMovement : MonoBehaviour
 {
     [SerializeField] private Transform _parentOfWay;
-    private Movement2D _movement;
+    [SerializeField] private int _currentWaypointIndex = 0;
+    [SerializeField] private float _roundedDistanceToTarget = 0.1f;
+    private Movement2D _entityMovement;
     private Rigidbody2D _rigidbody2D;
     private Vector3[] _wayPoints;
-    [SerializeField] private int _currentWaypointIndex = 0;
     
     private void Start()
     {
-        _movement = GetComponent<Movement2D>();
+        _entityMovement = GetComponent<Movement2D>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _wayPoints = new Vector3[_parentOfWay.childCount];
 
@@ -24,18 +25,35 @@ public class WaypointMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (IsEntityOnWaypoint())
+        {
+            ChangeWaypointIndex();
+        }
+        else
+        {
+            Vector3 normalizedDirection = GetNormalizedDirection();
+            _entityMovement.MoveHorizontally(normalizedDirection.x);
+        }
+    }
+
+    private bool IsEntityOnWaypoint()
+    {
+        Vector3 targetWaypoint = _wayPoints[_currentWaypointIndex];
+        return Mathf.Abs(transform.position.x  - targetWaypoint.x) <= _roundedDistanceToTarget;
+    }
+
+    private void ChangeWaypointIndex()
+    {
+        _currentWaypointIndex++;
+
+        if (_currentWaypointIndex >= _wayPoints.Length)
+            _currentWaypointIndex = 0;
+    }
+
+    private Vector3 GetNormalizedDirection()
+    {
         Vector3 targetWaypoint = _wayPoints[_currentWaypointIndex];
         Vector3 direction = targetWaypoint - transform.position;
-        direction = direction.normalized;
-
-        _movement.MoveHorizontally(direction.x);
-        
-        if (Mathf.Abs(transform.position.x  - targetWaypoint.x) <= 0.1f)
-        {
-            _currentWaypointIndex++;
-
-            if (_currentWaypointIndex >= _wayPoints.Length)
-                _currentWaypointIndex = 0;
-        }
+        return direction.normalized;
     }
 }

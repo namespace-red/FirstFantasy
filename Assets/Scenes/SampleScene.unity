@@ -17575,6 +17575,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1057138079 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8568349797219358971, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+  m_PrefabInstance: {fileID: 8568349795809356521}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b97583caa649719ae7c140cca2caf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1292313529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2411936396097377017, guid: a6ad840bf64f0394fb351b59f8c0e7a4, type: 3}
@@ -17979,6 +17990,94 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8568349797219358961, guid: 0505aa0210885044a9299ed54411f073, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358970, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _attacked.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358970, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _attacked.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358970, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _attacked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1057138079}
+    - target: {fileID: 8568349797219358970, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _attacked.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358970, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _attacked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnAttacked
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358970, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _attacked.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CharacterAnimationsController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358970, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _attacked.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _jumped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _grounded.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _jumped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _grounded.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _jumped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1057138079}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _grounded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1057138079}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _jumped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _jumped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnJumped
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _grounded.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _grounded.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnGrounded
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _jumped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CharacterAnimationsController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _grounded.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CharacterAnimationsController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _jumped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568349797219358973, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _grounded.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105063369909864277, guid: 0505aa0210885044a9299ed54411f073, type: 3}
+      propertyPath: _value
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
