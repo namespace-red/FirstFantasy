@@ -759,7 +759,7 @@ TextureImporter:
       213: 8433899889433221012
     second: GroundAlbom_251
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -776,10 +776,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -818,6 +820,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -829,6 +833,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -841,6 +846,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -853,6 +859,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -4753,9 +4773,194 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      GroundAlbom_0: -1210073675000331457
+      GroundAlbom_1: 6672006654063479907
+      GroundAlbom_10: -2411942977221684357
+      GroundAlbom_100: 1754136328874639853
+      GroundAlbom_101: -1826193235614586748
+      GroundAlbom_102: -5255868528660935197
+      GroundAlbom_103: -21922358025721486
+      GroundAlbom_104: 4099010391817617764
+      GroundAlbom_105: 8442317143881476062
+      GroundAlbom_106: 6001335105285059574
+      GroundAlbom_107: -444829846103094160
+      GroundAlbom_108: -3712597989805288261
+      GroundAlbom_109: 7718431913949860178
+      GroundAlbom_11: -1348216423160481274
+      GroundAlbom_110: -198543519728060506
+      GroundAlbom_111: -4762097247977138971
+      GroundAlbom_112: 1056387232412602971
+      GroundAlbom_113: -5207349781214643100
+      GroundAlbom_114: 2703048379498490829
+      GroundAlbom_115: -4691284511224171713
+      GroundAlbom_116: 6957281504879650180
+      GroundAlbom_117: -8751818805669466971
+      GroundAlbom_118: 173739506593542052
+      GroundAlbom_119: 4035532722071979427
+      GroundAlbom_12: 3478836194613260804
+      GroundAlbom_120: -2880339638426620186
+      GroundAlbom_121: 5193246267610617031
+      GroundAlbom_122: -4579363570688772706
+      GroundAlbom_123: -8571776916323319557
+      GroundAlbom_124: -2546332444842349653
+      GroundAlbom_125: -1238301322249565454
+      GroundAlbom_126: -6043278694368274852
+      GroundAlbom_127: 1877030284827488744
+      GroundAlbom_128: -6278295048479088941
+      GroundAlbom_129: -8187712645500445686
+      GroundAlbom_13: 1657719096952481181
+      GroundAlbom_130: -7859256232832594861
+      GroundAlbom_131: -1773433361631242466
+      GroundAlbom_132: -8347851257957524554
+      GroundAlbom_133: 5567616672389676898
+      GroundAlbom_134: 8489467288785616339
+      GroundAlbom_135: -402680082922575480
+      GroundAlbom_136: 7358638822085925754
+      GroundAlbom_137: 8331735931156456576
+      GroundAlbom_138: -3096007286199220958
+      GroundAlbom_139: 1030755953425329727
+      GroundAlbom_14: 578666548498409866
+      GroundAlbom_140: -3401854412059687840
+      GroundAlbom_141: -5946081885898427857
+      GroundAlbom_142: -5632283014463557257
+      GroundAlbom_143: -1489167298546173990
+      GroundAlbom_144: 6291224099576239456
+      GroundAlbom_145: 7583654728946410773
+      GroundAlbom_146: -3977909245848782078
+      GroundAlbom_147: 2661985571598107877
+      GroundAlbom_148: -2766876693226914790
+      GroundAlbom_149: 8857034451424423428
+      GroundAlbom_15: -6395881029533761026
+      GroundAlbom_150: 5825447908595630848
+      GroundAlbom_151: 8237275078825641408
+      GroundAlbom_152: -1933174539816901065
+      GroundAlbom_153: 5132015381564618075
+      GroundAlbom_154: -7527552028377459382
+      GroundAlbom_155: 6496643096184963542
+      GroundAlbom_156: 5096475787766965051
+      GroundAlbom_157: 256905368352251288
+      GroundAlbom_158: -7380838161776810039
+      GroundAlbom_159: 7901640254097823890
+      GroundAlbom_16: -2673884765670509187
+      GroundAlbom_160: -1909024321628568684
+      GroundAlbom_161: 8919038163254496254
+      GroundAlbom_162: 5860634286746850393
+      GroundAlbom_163: 1394947663095311069
+      GroundAlbom_164: -1263213850346045273
+      GroundAlbom_165: 6066664718448793244
+      GroundAlbom_166: 155378619297958902
+      GroundAlbom_167: 6847092040160963113
+      GroundAlbom_168: 3750131158386539337
+      GroundAlbom_169: -4303144048877127893
+      GroundAlbom_17: 994637895677611947
+      GroundAlbom_170: 7006495968684665066
+      GroundAlbom_171: 4654126298466715342
+      GroundAlbom_172: -131790911554149633
+      GroundAlbom_173: -949451494966927814
+      GroundAlbom_174: -458534810894550065
+      GroundAlbom_175: -6137511011814022912
+      GroundAlbom_176: -6055431629578326866
+      GroundAlbom_177: -8302123096189913313
+      GroundAlbom_178: 3571557726296697988
+      GroundAlbom_179: -7003268953329585759
+      GroundAlbom_18: -3246942128887649603
+      GroundAlbom_180: 6606829348344802494
+      GroundAlbom_181: 545077466625286332
+      GroundAlbom_182: -4672985287575428403
+      GroundAlbom_183: -1652046944485845464
+      GroundAlbom_184: 1143330026760045747
+      GroundAlbom_19: -3057495666530161400
+      GroundAlbom_2: 5290795656802242236
+      GroundAlbom_20: -6873977682353285400
+      GroundAlbom_21: 7383954180813978430
+      GroundAlbom_22: -3148826088985837691
+      GroundAlbom_23: 3606095394563477536
+      GroundAlbom_24: -6327707102869056038
+      GroundAlbom_25: -6869099370335991026
+      GroundAlbom_26: 5904255698264396997
+      GroundAlbom_27: -555303116592297284
+      GroundAlbom_28: -3235982049345326456
+      GroundAlbom_29: -4064409521933404506
+      GroundAlbom_3: -7620172675706771585
+      GroundAlbom_30: -803175256584730512
+      GroundAlbom_31: 3758121888994730728
+      GroundAlbom_32: -9213265995270171184
+      GroundAlbom_33: -664108001010123731
+      GroundAlbom_34: -8566604626465762597
+      GroundAlbom_35: -5108385083407492206
+      GroundAlbom_36: -720744013146937362
+      GroundAlbom_37: -4570738086268382172
+      GroundAlbom_38: -8320559496408970522
+      GroundAlbom_39: 5907310683462458842
+      GroundAlbom_4: -8235106065555709037
+      GroundAlbom_40: 4432416148300172352
+      GroundAlbom_41: -7696236146998104878
+      GroundAlbom_42: 4033574442531796696
+      GroundAlbom_43: -3353851775906349444
+      GroundAlbom_44: 9076730187533931294
+      GroundAlbom_45: -77990291673107460
+      GroundAlbom_46: 4345350653484169153
+      GroundAlbom_47: -2560169528119517010
+      GroundAlbom_48: -7158029243047216280
+      GroundAlbom_49: -2535076758588418607
+      GroundAlbom_5: -7222474743164610712
+      GroundAlbom_50: 8683745934019420799
+      GroundAlbom_51: -6062182386312557479
+      GroundAlbom_52: -2719104201892437321
+      GroundAlbom_53: -7879991046116503941
+      GroundAlbom_54: 6681504862700698536
+      GroundAlbom_55: -1940386094968814037
+      GroundAlbom_56: 7414872076878373788
+      GroundAlbom_57: -3855491681868349286
+      GroundAlbom_58: -7703897236435688923
+      GroundAlbom_59: 3871390627741307995
+      GroundAlbom_6: -5363616260059834193
+      GroundAlbom_60: 5801416839513338615
+      GroundAlbom_61: -8201037777991221311
+      GroundAlbom_62: 7606337003972209362
+      GroundAlbom_63: -6943122830626456890
+      GroundAlbom_64: -1356313170580838789
+      GroundAlbom_65: 2541223762352329419
+      GroundAlbom_66: -8123100393551818775
+      GroundAlbom_67: -901549430909442542
+      GroundAlbom_68: -6504198300447286753
+      GroundAlbom_69: -3277244303263666606
+      GroundAlbom_7: 985455533721876733
+      GroundAlbom_70: 7724720609161916329
+      GroundAlbom_71: -706651022970229435
+      GroundAlbom_72: 52691981931190160
+      GroundAlbom_73: -3534041917086971745
+      GroundAlbom_74: -4124129550101063447
+      GroundAlbom_75: -4618075790285202242
+      GroundAlbom_76: 6153823496218348905
+      GroundAlbom_77: -7932531951208491386
+      GroundAlbom_78: -8470904621293183762
+      GroundAlbom_79: -1382714035436016766
+      GroundAlbom_8: 5891526631780788804
+      GroundAlbom_80: 6914095484313848895
+      GroundAlbom_81: 2452598054474684642
+      GroundAlbom_82: -5266882880648845808
+      GroundAlbom_83: 2452790989410068818
+      GroundAlbom_84: -966029920250734530
+      GroundAlbom_85: 1521447918726105174
+      GroundAlbom_86: -3695226594743349423
+      GroundAlbom_87: 986959276989953558
+      GroundAlbom_88: -4806962316928108692
+      GroundAlbom_89: -2541062920952568241
+      GroundAlbom_9: -1510804427675067885
+      GroundAlbom_90: -2995686796390552746
+      GroundAlbom_91: 3158104250480816794
+      GroundAlbom_92: 7886349220818461608
+      GroundAlbom_93: 51493701208449357
+      GroundAlbom_94: -7176856649289454100
+      GroundAlbom_95: -296269491293074604
+      GroundAlbom_96: 7992387393932259623
+      GroundAlbom_97: -7389914745722725967
+      GroundAlbom_98: -5214309075293060699
+      GroundAlbom_99: -791386799856021606
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

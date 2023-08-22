@@ -615,7 +615,7 @@ TextureImporter:
       213: 4330357790464536747
     second: TreeAlbom_203
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -632,10 +632,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -674,6 +676,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -685,6 +689,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -697,6 +702,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -709,6 +715,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -5008,9 +5028,213 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      TreeAlbom_0: -2738179822750390597
+      TreeAlbom_1: 6329808836156075620
+      TreeAlbom_10: 2897547653532724170
+      TreeAlbom_100: -3364294904029479756
+      TreeAlbom_101: 7962010132163810208
+      TreeAlbom_102: -3314680841797325311
+      TreeAlbom_103: -1610447981327264624
+      TreeAlbom_104: -5924059924704762284
+      TreeAlbom_105: -1093561575553878317
+      TreeAlbom_106: -7928283730439774439
+      TreeAlbom_107: 2718120234273605597
+      TreeAlbom_108: 6302082672730541100
+      TreeAlbom_109: 3843438152368783424
+      TreeAlbom_11: 4642710625999441545
+      TreeAlbom_110: 872210199946249839
+      TreeAlbom_111: 2821811953138573120
+      TreeAlbom_112: 1990264335314162773
+      TreeAlbom_113: 6302251919464538764
+      TreeAlbom_114: -6784202916934065404
+      TreeAlbom_115: -1537577493785704147
+      TreeAlbom_116: -4533750952546597434
+      TreeAlbom_117: -4920650520890958788
+      TreeAlbom_118: -1564003181030247233
+      TreeAlbom_119: -2292714852272212659
+      TreeAlbom_12: 1092525709443576598
+      TreeAlbom_120: 4162468502456692387
+      TreeAlbom_121: 2561299940512849787
+      TreeAlbom_122: -3790696204844604033
+      TreeAlbom_123: 8591104078555628745
+      TreeAlbom_124: 6500613318090463113
+      TreeAlbom_125: 1766233514805415291
+      TreeAlbom_126: -3178186770158541634
+      TreeAlbom_127: 798824316728644341
+      TreeAlbom_128: 1809955599241578202
+      TreeAlbom_129: 3235888816286566436
+      TreeAlbom_13: -8548104697221850804
+      TreeAlbom_130: -1703301893851698574
+      TreeAlbom_131: -3970819937096907707
+      TreeAlbom_132: 7374539733797696725
+      TreeAlbom_133: 7576429705323320920
+      TreeAlbom_134: 6657196504592656517
+      TreeAlbom_135: -8856712114303776819
+      TreeAlbom_136: -8390900687629468299
+      TreeAlbom_137: -483416456191857643
+      TreeAlbom_138: 1476391988558641406
+      TreeAlbom_139: 9114851128207475055
+      TreeAlbom_14: -5326639650108898742
+      TreeAlbom_140: -6356758479450616817
+      TreeAlbom_141: 281114405681790438
+      TreeAlbom_142: -9107955529098353267
+      TreeAlbom_143: 4398688121304661270
+      TreeAlbom_144: 2454722870579249885
+      TreeAlbom_145: -5202926683552102570
+      TreeAlbom_146: 4203497690204335246
+      TreeAlbom_147: -3623924050526541629
+      TreeAlbom_148: -7254514485592246472
+      TreeAlbom_149: -5249232537571331085
+      TreeAlbom_15: 8025962698731659493
+      TreeAlbom_150: 5111498144680081564
+      TreeAlbom_151: 5384923584297049594
+      TreeAlbom_152: -6088668336865772482
+      TreeAlbom_153: 6215450374446397679
+      TreeAlbom_154: 5654295470553482612
+      TreeAlbom_155: 2564605849343490564
+      TreeAlbom_156: -8152355153956745582
+      TreeAlbom_157: 2124524674148992935
+      TreeAlbom_158: -6865625768101298449
+      TreeAlbom_159: 4489072540928220985
+      TreeAlbom_16: 2211130982984746533
+      TreeAlbom_160: -533497731596324430
+      TreeAlbom_161: 1500574203526500055
+      TreeAlbom_162: -5905524613485604040
+      TreeAlbom_163: 8366650220178036371
+      TreeAlbom_164: -6187101602203951275
+      TreeAlbom_165: 3896052423345569986
+      TreeAlbom_166: -5205149675867144105
+      TreeAlbom_167: 5847885644471189431
+      TreeAlbom_168: -1457336959120362517
+      TreeAlbom_169: -6230902783300006674
+      TreeAlbom_17: 726037500626970483
+      TreeAlbom_170: -1927808620649897822
+      TreeAlbom_171: -5751099270991661729
+      TreeAlbom_172: 9023812584370022462
+      TreeAlbom_173: -309909774874301569
+      TreeAlbom_174: -2835216385650171730
+      TreeAlbom_175: -6303189634712566150
+      TreeAlbom_176: 1147502040073748345
+      TreeAlbom_177: -1280930055642848030
+      TreeAlbom_178: 6410197751373861238
+      TreeAlbom_179: 7468081135693362715
+      TreeAlbom_18: 4598856095813144049
+      TreeAlbom_180: -3710917619756176467
+      TreeAlbom_181: 4932905717887827158
+      TreeAlbom_182: -1681336922674487783
+      TreeAlbom_183: -3227075546670310432
+      TreeAlbom_184: 548362337831537426
+      TreeAlbom_185: -9072811838900195195
+      TreeAlbom_186: 2506825863276815613
+      TreeAlbom_187: -4331628527435028068
+      TreeAlbom_188: -8019825211605656258
+      TreeAlbom_189: 1915301427777499341
+      TreeAlbom_19: 574667246865863638
+      TreeAlbom_190: -230513060863807034
+      TreeAlbom_191: -3337193574660892081
+      TreeAlbom_192: 4815294404849443592
+      TreeAlbom_193: -5059274221460174543
+      TreeAlbom_194: -2886178318162438129
+      TreeAlbom_195: 6674663096557877747
+      TreeAlbom_196: -5797824396165093000
+      TreeAlbom_197: -3311383431311325474
+      TreeAlbom_198: -2254768825981728407
+      TreeAlbom_199: 3341570859541307517
+      TreeAlbom_2: 3178553682147522185
+      TreeAlbom_20: 3445700451476563279
+      TreeAlbom_200: -8733019132259414570
+      TreeAlbom_201: -2074715696393918435
+      TreeAlbom_202: -171658800446949415
+      TreeAlbom_203: 4330357790464536747
+      TreeAlbom_21: -2462086754044316070
+      TreeAlbom_22: -284141128551850328
+      TreeAlbom_23: -7056557845963825125
+      TreeAlbom_24: -5300512327550892243
+      TreeAlbom_25: 6443894516544530481
+      TreeAlbom_26: 2269407925738414054
+      TreeAlbom_27: 3568116455012260640
+      TreeAlbom_28: -2281671679665174811
+      TreeAlbom_29: 7094565727290457870
+      TreeAlbom_3: 7077685808870953322
+      TreeAlbom_30: -5794012638980560983
+      TreeAlbom_31: -2738842783389707336
+      TreeAlbom_32: -3160068548754165726
+      TreeAlbom_33: 5776197405605976421
+      TreeAlbom_34: -192429416835241031
+      TreeAlbom_35: 1492420442807317556
+      TreeAlbom_36: -57231513499091439
+      TreeAlbom_37: 2894570258712516776
+      TreeAlbom_38: -233159856104339591
+      TreeAlbom_39: 8054723656680967305
+      TreeAlbom_4: -4485027239851554702
+      TreeAlbom_40: -701544490563821646
+      TreeAlbom_41: 6376840571343790974
+      TreeAlbom_42: -2211786827479531490
+      TreeAlbom_43: -326375515070783976
+      TreeAlbom_44: -4454654737628595522
+      TreeAlbom_45: -2478587169779856010
+      TreeAlbom_46: -761171970372444511
+      TreeAlbom_47: 2574667050937886011
+      TreeAlbom_48: -5506552360793053635
+      TreeAlbom_49: 4611360635841750486
+      TreeAlbom_5: 3340450909730253260
+      TreeAlbom_50: -6980941303510521198
+      TreeAlbom_51: 365324530180888769
+      TreeAlbom_52: -3641980158554082682
+      TreeAlbom_53: -6477006800609248421
+      TreeAlbom_54: 2971347716387978812
+      TreeAlbom_55: 6294473613080721938
+      TreeAlbom_56: 1051364001017529591
+      TreeAlbom_57: -4901715145348072833
+      TreeAlbom_58: -1895788777440018573
+      TreeAlbom_59: 3501204847385920638
+      TreeAlbom_6: 6600692229508896814
+      TreeAlbom_60: 7956859658604421027
+      TreeAlbom_61: -2929958380622228604
+      TreeAlbom_62: -4580420609984744724
+      TreeAlbom_63: -591077424492372586
+      TreeAlbom_64: -6676857095718293006
+      TreeAlbom_65: -7564887531861699260
+      TreeAlbom_66: -6610450864664844098
+      TreeAlbom_67: -6672984800651387716
+      TreeAlbom_68: 1504499708270574182
+      TreeAlbom_69: -6784464439095314874
+      TreeAlbom_7: -8845279164401371985
+      TreeAlbom_70: -6566618954489658322
+      TreeAlbom_71: -7051842824790728002
+      TreeAlbom_72: -4079233115814408023
+      TreeAlbom_73: -1068252269831544628
+      TreeAlbom_74: -3923456076533238537
+      TreeAlbom_75: -784308700741460440
+      TreeAlbom_76: 3493106566910344790
+      TreeAlbom_77: 6254690822055559551
+      TreeAlbom_78: 5114699067663320895
+      TreeAlbom_79: -3977430737827591094
+      TreeAlbom_8: 7552504868736580338
+      TreeAlbom_80: -9084761725724630795
+      TreeAlbom_81: -5831446249485803920
+      TreeAlbom_82: -8342481618322545805
+      TreeAlbom_83: -8452752322017613407
+      TreeAlbom_84: -7594355882663217152
+      TreeAlbom_85: -173235373287323243
+      TreeAlbom_86: 4431538433468153694
+      TreeAlbom_87: -3051597592447620690
+      TreeAlbom_88: 920454412480810116
+      TreeAlbom_89: 5756178786671823600
+      TreeAlbom_9: -8427817229347492926
+      TreeAlbom_90: -7563491258522474022
+      TreeAlbom_91: 2415047333605861953
+      TreeAlbom_92: -4018532037028318595
+      TreeAlbom_93: 9102120670290330730
+      TreeAlbom_94: 1057303200902092090
+      TreeAlbom_95: -6518463425094707532
+      TreeAlbom_96: -8614208450286781132
+      TreeAlbom_97: 6609944274180376290
+      TreeAlbom_98: 5285101552397551521
+      TreeAlbom_99: 6996517386250916050
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

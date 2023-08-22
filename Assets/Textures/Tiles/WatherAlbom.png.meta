@@ -159,7 +159,7 @@ TextureImporter:
       213: 1797267598249703921
     second: WatherAlbom_51
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -176,10 +176,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -218,6 +220,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -229,6 +233,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -241,6 +246,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -253,6 +259,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1360,9 +1380,61 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      WatherAlbom_0: 463847198367150453
+      WatherAlbom_1: -2847484343763941040
+      WatherAlbom_10: -9021252339654508237
+      WatherAlbom_11: -1809899852088231689
+      WatherAlbom_12: 9062055853854403377
+      WatherAlbom_13: 2781657118717600694
+      WatherAlbom_14: 4883420299502739318
+      WatherAlbom_15: -7641479365562679042
+      WatherAlbom_16: -7613159881591891959
+      WatherAlbom_17: 8704399657931421991
+      WatherAlbom_18: 7441727342349662794
+      WatherAlbom_19: 4335647249083476149
+      WatherAlbom_2: -4248044685681898836
+      WatherAlbom_20: -5601529258313345447
+      WatherAlbom_21: 131583793564529099
+      WatherAlbom_22: 1948729669890362871
+      WatherAlbom_23: -4001369371588233007
+      WatherAlbom_24: -3829396184203006442
+      WatherAlbom_25: -1876841169795833679
+      WatherAlbom_26: 8972122327403330121
+      WatherAlbom_27: 5172752501775170857
+      WatherAlbom_28: -5000828578446213003
+      WatherAlbom_29: -6547186365198248057
+      WatherAlbom_3: 1334200562833714603
+      WatherAlbom_30: -3473225859632330266
+      WatherAlbom_31: 8919378887759630367
+      WatherAlbom_32: 5352181063394590609
+      WatherAlbom_33: -3330901059056688423
+      WatherAlbom_34: -5639173279147406265
+      WatherAlbom_35: 2555136286852963528
+      WatherAlbom_36: 6548097252963031742
+      WatherAlbom_37: -7359114724008868485
+      WatherAlbom_38: 5589593899197198953
+      WatherAlbom_39: -8911965262477107894
+      WatherAlbom_4: 1308909169559727576
+      WatherAlbom_40: 7207943305969266115
+      WatherAlbom_41: -5854872346122651825
+      WatherAlbom_42: -2782006599966927679
+      WatherAlbom_43: -1498982395580227778
+      WatherAlbom_44: 7453799520248681737
+      WatherAlbom_45: -6785561169790100054
+      WatherAlbom_46: -1949579873465692952
+      WatherAlbom_47: -7539946732220330258
+      WatherAlbom_48: 8426318043625666280
+      WatherAlbom_49: 5837555827007045727
+      WatherAlbom_5: 5042799275383129855
+      WatherAlbom_50: -1665396291927701380
+      WatherAlbom_51: 1797267598249703921
+      WatherAlbom_6: -1991602785566437152
+      WatherAlbom_7: 6600773217508266831
+      WatherAlbom_8: 8136941021023323299
+      WatherAlbom_9: 5115142223551294285
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
