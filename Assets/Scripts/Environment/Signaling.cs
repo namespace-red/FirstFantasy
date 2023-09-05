@@ -31,7 +31,8 @@ public class Signaling : MonoBehaviour
     {
         while (_audioSource.volume != _targetVolume)
         {
-            _audioSource.volume = Mathf.MoveTowards(_audioSource.volume, _targetVolume, _volumeChangeRate * Time.deltaTime);
+            _audioSource.volume = Mathf.MoveTowards(_audioSource.volume, _targetVolume, 
+                _volumeChangeRate * Time.deltaTime);
             yield return null;
         }
     }
