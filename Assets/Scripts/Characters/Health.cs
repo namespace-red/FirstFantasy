@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     [SerializeField] private float _value;
+    [SerializeField] private float _minValue = 0f;
     [SerializeField] private float _maxValue = 100f;
     
     public UnityAction<float, float> ValueChanged;
@@ -14,14 +15,7 @@ public class Health : MonoBehaviour
         get => _value;
         set
         {
-            _value = value;
-            
-            if (Value < 0)
-                _value = 0;
-            
-            if (Value > _maxValue) 
-                MakeValueMax();
-                
+            _value = Mathf.Clamp(value, _minValue , _maxValue);
             ValueChanged?.Invoke(Value, _maxValue);
             
             if (Value == 0)
