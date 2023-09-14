@@ -3,10 +3,10 @@ using UnityEngine.Events;
 
 public class Attacker : MonoBehaviour
 {
-    [SerializeField] private UnityEvent _attacked = new UnityEvent();
+    public UnityAction Attacked;
     
     public void Hit()
     {
-        _attacked?.Invoke();
+        Attacked?.Invoke();
     }
 }

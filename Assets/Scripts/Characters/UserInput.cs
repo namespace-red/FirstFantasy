@@ -3,21 +3,26 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Movement2D))]
+[RequireComponent(typeof(GroundChecker))]
 [RequireComponent(typeof(Attacker))]
 [RequireComponent(typeof(CharacterAnimationsController))]
 [RequireComponent(typeof(EntityLook))]
+
 public class UserInput : MonoBehaviour
 {
     private Movement2D _movement2D;
+    private GroundChecker _groundChecker;
     private Attacker _attacker;
     private CharacterAnimationsController _animationsController;
     private EntityLook _characterLook;
+    
     private float _horizontalDirection = 0f;
     private bool _isJumped = false;
 
     private void Awake()
     {
         _movement2D = GetComponent<Movement2D>();
+        _groundChecker = GetComponent<GroundChecker>();
         _attacker = GetComponent<Attacker>();
         _animationsController = GetComponent<CharacterAnimationsController>();
         _characterLook = GetComponent<EntityLook>();
@@ -55,11 +60,11 @@ public class UserInput : MonoBehaviour
             _isJumped = true;
     }
 
-    public void Attack()
+    private void Attack()
     {
         if (Input.GetMouseButtonDown((int)MouseButton.LeftMouse))
         {
-            if ((_animationsController.IsAttacking() == false) && _movement2D.IsGrounded)
+            if ((_animationsController.IsAttacking() == false) && _groundChecker.IsGrounding)
             {
                 _attacker.Hit();
             }
