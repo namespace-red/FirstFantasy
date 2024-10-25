@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -6,10 +7,10 @@ using UnityEngine;
 public class Signaler : MonoBehaviour
 {
     [SerializeField] private float _volumeChangeRate = 0.5f;
-    
-    private Coroutine _activeCoroutine;
+    [SerializeField] private ContactTracker _contactTracker;
+     
+    private Coroutine _coroutine;
     private AudioSource _audioSource;
-    private float _targetVolume;
 
     private void Awake()
     {
@@ -17,45 +18,55 @@ public class Signaler : MonoBehaviour
         _audioSource.volume = 0f;
     }
 
-    public void PlaySignal()
+    private void OnEnable()
+    {
+        _contactTracker.Entered += PlaySignal;
+        _contactTracker.CameОut += StopSignal;
+    }
+
+    private void OnDisable()
+    {
+        _contactTracker.Entered -= PlaySignal;
+        _contactTracker.CameОut -= StopSignal;
+    }
+    
+    private void PlaySignal()
     {
         _audioSource.loop = true;
         _audioSource.Play();
-        _targetVolume = 1f;
         
-        StartVolumeChanging();
+        ChangeVolume(1f);
     }
 
-    public void StopSignal()
+    private void StopSignal()
     {
         _audioSource.loop = false;
         _audioSource.Stop();
         _audioSource.Play();
-        _targetVolume = 0f;
         
-        StartVolumeChanging();
+        ChangeVolume(0f);
     }
 
-    private void StartVolumeChanging()
+    private void ChangeVolume(float targetVolume)
     {
-        if (_activeCoroutine != null)
+        if (_coroutine != null)
         {
-            StopCoroutine(_activeCoroutine);
+            StopCoroutine(_coroutine);
         }
         
-        _activeCoroutine = StartCoroutine(ChangeVolume());
+        _coroutine = StartCoroutine(ChangeVolumeCoroutine(targetVolume));
     }
 
-    private IEnumerator ChangeVolume()
+    private IEnumerator ChangeVolumeCoroutine(float targetVolume)
     {
-        while (_audioSource.volume != _targetVolume)
+        while (_audioSource.volume != targetVolume)
         {
-            _audioSource.volume = Mathf.MoveTowards(_audioSource.volume, _targetVolume, 
+            _audioSource.volume = Mathf.MoveTowards(_audioSource.volume, targetVolume, 
                 _volumeChangeRate * Time.deltaTime);
             
             yield return null;
         }
 
-        _activeCoroutine = null;
+        _coroutine = null;
     }
 }
